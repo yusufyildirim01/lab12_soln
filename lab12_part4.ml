@@ -110,8 +110,8 @@ module MakeImpQueue (Elt : sig
           | Cons(_, _) -> ());
          Some hd
       | Nil -> None
+    (* our solution for defining `to_string`: *)
     let to_string {front; _} =
-      (* our solution for defining `to_string`: *)
       let rec to_string' mlst =
         match !mlst with
         | Nil -> "||"

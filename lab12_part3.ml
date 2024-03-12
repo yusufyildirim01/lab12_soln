@@ -150,10 +150,7 @@ Examples of use:
     try to think it through yourself first.)
 
       ANSWER: Since `mappend` is called for its side effect, `unit` is
-      the appropriate return type. An alternative would be to return
-      some indication as to whether the appending succeeded -- since
-      it could fail if the first argument is `Nil` -- perhaps as an
-      option type or boolean.
+      the appropriate return type.
  *)
        
 let rec mappend (xs : 'a mlist) (ys : 'a mlist) : unit =
