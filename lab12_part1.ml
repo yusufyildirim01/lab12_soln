@@ -83,7 +83,8 @@ let remember : string -> string =
   let memory = ref "" in
   fun (msg : string) -> let previous = !memory in
                         memory := msg;
-                        previous ;;
+                        previous 
+                     ;;
 
 (* An alternative is to move the `memory` variable outside the
    function definition, as:
